@@ -17,6 +17,8 @@ Most of the observations showed what you would generally expect, but certain res
 (1) **jobs**:
 Based on the visualizations obtained, we could not decipher any strong co-relation of the housing price index with the job creation. However, we found a negative trend in the housing prices for California post-recession which doesn't look like improving. Meanwhile, the state of Montana showed a considerable increase in the cost.  
 During the recession, the state of California, Texas and New York went through the maximum impact on job creation. While the recovery process for Texas and California has been remarkably good, while New York which depends most on the financial sector, has a slow recovery.
+![](A1.png)
+![](A2.png)
 
 (2) **econ_state**:
 You would expect big states such as California, Texas, to churn out jobs in big number, from all sectors. That is what we found.
@@ -46,7 +48,8 @@ Instead, we wanted to investigate the *myth of whether places with a higher perc
 ### Technical Summary  
 (1) **jobs**:
 Processing 5 million rows was a big task; but once aggregated over year and states, it was easier to compute operations and merge data.
-The correlation between number of jobs growth and GDP growth is **0.204**.
+The correlation between number of jobs growth and GDP growth is **0.204**.  
+![](https://github.com/correlation-one-datathon-team-25/submission/blob/master/GDPgrowth%20VS%20job%20growth.png)
 
 (2) **econ_state**:
 (Refer Tableau Dashboard - if finished - put link)
@@ -67,9 +70,15 @@ The analysis was made assuming stratified job postings in the portal, which migh
 For this investigation, we focused on data from the econ_state and education files.
 *education*: we filtered the data so that we merged everything to be sorted by state, and calculated the percentage of people who studied STEM majors from each state (computer science, statistics, engineering and related fields)
 *econ_state*: we sampled the most recently measured per capita income and unemployment rate from each state in 2016.
-After obtaining data from the two above data files, we created a new dataframe to graph our sorted data.
+After obtaining data from the two above data files, we created a new dataframe to graph our sorted data. 
+
+![](https://github.com/correlation-one-datathon-team-25/submission/blob/master/Rplot.png)
+
 **STEM % VS Unemployment Rate**
-There is a weak positive correlation between the percent of people studying STEM and the unemployment rate. Each dot on the scatterplot represents a distinct US state. This is surprising since the supply for STEM related jobs seems to be in high demand, yet places with a higher percentage of people studying STEM fields also have higher unemployment rates.
+There is a weak positive correlation between the percent of people studying STEM and the unemployment rate. Each dot on the scatterplot represents a distinct US state. This is surprising since the supply for STEM related jobs seems to be in high demand, yet places with a higher percentage of people studying STEM fields also have higher unemployment rates.  
+
+![](https://github.com/correlation-one-datathon-team-25/submission/blob/master/Rplot01.png)
+
 **STEM % VS Per Capita Income**
 There is a weak positive correlation between the percent of people studying STEM and Per Capita Income for each state. Each dot on the scatterplot represents a distinct US state. This relationship has a stronger correlation than the previous graph, though a few many states lie far above the line of best fit, indicating high per capita incomes despite the low percentage of students studying STEM fields in that state. 
 
